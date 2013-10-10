@@ -25,10 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity  android:name="com.example.hw.page1"
-                     android:label="@string/name_p1"
-             
-             />
+         <activity  
+             android:name="com.example.hw.page1"
+             android:theme="@style/CustomTheme"
+                />
          <activity  android:name="com.example.hw.page2"
             android:theme="@style/MainThem"        
              />

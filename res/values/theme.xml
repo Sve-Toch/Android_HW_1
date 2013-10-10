@@ -37,4 +37,9 @@
         <item name="android:typeface">serif</item>
         <item name="android:textSize">10sp</item>
     </style>
+
+    <style name="CustomTheme" parent="android:Theme.Light">
+        <item name="android:windowTitleSize">35dip</item>       
+        <item name="android:windowTitleBackgroundStyle">@drawable/header_1</item>
+    </style>
 </resources>

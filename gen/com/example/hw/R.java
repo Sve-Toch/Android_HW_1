@@ -29,25 +29,28 @@ public final class R {
         public static final int hbutton_focused=0x7f020005;
         public static final int hbutton_normal=0x7f020006;
         public static final int hbutton_pressed=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
-        public static final int menu_button=0x7f020009;
-        public static final int menu_button_focused=0x7f02000a;
-        public static final int menu_button_normal=0x7f02000b;
-        public static final int menu_button_pressed=0x7f02000c;
-        public static final int u13_normal=0x7f02000d;
-        public static final int u17_normal=0x7f02000e;
-        public static final int u28_normal=0x7f02000f;
-        public static final int u2_normal=0x7f020010;
-        public static final int u30_normal=0x7f020011;
-        public static final int u34_normal=0x7f020012;
-        public static final int u47_normal=0x7f020013;
+        public static final int header_1=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int menu_button=0x7f02000a;
+        public static final int menu_button_focused=0x7f02000b;
+        public static final int menu_button_normal=0x7f02000c;
+        public static final int menu_button_pressed=0x7f02000d;
+        public static final int u13_normal=0x7f02000e;
+        public static final int u17_normal=0x7f02000f;
+        public static final int u28_normal=0x7f020010;
+        public static final int u2_normal=0x7f020011;
+        public static final int u30_normal=0x7f020012;
+        public static final int u34_normal=0x7f020013;
+        public static final int u47_normal=0x7f020014;
+        public static final int u6_normal=0x7f020015;
+        public static final int u8_normal=0x7f020016;
     }
     public static final class id {
         public static final int EditText=0x7f080006;
         public static final int ImageButton1=0x7f080008;
         public static final int ImageButton2=0x7f080009;
         public static final int ImageButton3=0x7f08000a;
-        public static final int action_settings=0x7f080025;
+        public static final int action_settings=0x7f080028;
         public static final int button1=0x7f080002;
         public static final int button1_dialog_p1=0x7f08000c;
         public static final int button2=0x7f080003;
@@ -55,6 +58,9 @@ public final class R {
         public static final int buttonDialog=0x7f080005;
         public static final int buttonDialog2=0x7f080022;
         public static final int editText1_dialog_p1=0x7f08000b;
+        public static final int header_iv1=0x7f080027;
+        public static final int header_iv2=0x7f080025;
+        public static final int header_textView1=0x7f080026;
         public static final int image=0x7f080000;
         public static final int image2=0x7f080020;
         public static final int image3=0x7f080024;
@@ -88,6 +94,7 @@ public final class R {
         public static final int page1=0x7f030002;
         public static final int page2=0x7f030003;
         public static final int page3=0x7f030004;
+        public static final int window_title=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -98,15 +105,8 @@ public final class R {
         public static final int Dialog=0x7f050008;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int dialog_about_message=0x7f05000a;
         public static final int dialog_about_title=0x7f050009;
-        public static final int dialog_page3_message=0x7f050011;
-        public static final int dialog_rate_buy=0x7f05000f;
-        public static final int dialog_rate_cancel=0x7f05000e;
-        public static final int dialog_rate_message=0x7f05000c;
-        public static final int dialog_rate_ok=0x7f05000d;
-        public static final int dialog_rate_title=0x7f05000b;
-        public static final int dialog_settings_title=0x7f050010;
+        public static final int dialog_page3_message=0x7f05000a;
         public static final int hello_world=0x7f050002;
         public static final int name_p1=0x7f050004;
         public static final int text=0x7f050006;
@@ -140,6 +140,7 @@ public final class R {
          */
         public static final int AppTheme=0x7f060001;
         public static final int ButtonTheme=0x7f060006;
+        public static final int CustomTheme=0x7f06000a;
         public static final int DialogButtonTheme=0x7f060007;
         public static final int DialogTheme=0x7f060009;
         public static final int MainThem=0x7f060003;

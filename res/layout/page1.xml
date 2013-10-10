@@ -10,13 +10,13 @@
 
     <TextView
        android:id="@+id/textView1_page1"    
-       android:text="@string/text"
+       android:text="@string/no_text"
        style="@style/TextViewTheme"         
        />
    
     <TextView
        android:id="@+id/textView2_page1"
-       android:text="@string/text"
+       android:text="@string/no_text"
        style="@style/TextViewTheme"    
        />
    

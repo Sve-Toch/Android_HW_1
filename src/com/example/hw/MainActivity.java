@@ -24,11 +24,16 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		ImageButton btn1 = (ImageButton) findViewById(R.id.ImageButton1);
+		 et_m= (EditText) findViewById(R.id.EditText);
 		btn1.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(MainActivity.this, page1.class);
+				i.putExtra("first",first);
+				if( first==false)
+				{i.putExtra("text",et_m.getText().toString());}
+
 				startActivity(i);
 			}
 		});
@@ -51,7 +56,7 @@ public class MainActivity extends Activity {
 				startActivity(i);
 			}
 		});
-	    et_m= (EditText) findViewById(R.id.EditText);
+	   
 	   
 		Button btn4 = (Button) findViewById(R.id.buttonDialog);
 		btn4.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +78,7 @@ public class MainActivity extends Activity {
 							String s;
 							if (first==false ){
 							 s =et_m.getText().toString(); 
-							} else {first=true; s="";}
+							} else {first=false; s="";}
 							et_m.setText(s+et.getText());
 							 dialog.dismiss();
 						}

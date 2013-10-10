@@ -11,7 +11,7 @@
     </string>
     <string name="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
     <string name="Dialog">Dialog</string>
-    <string name="dialog_about_title">dialog_about_title</string>
+    <string name="no_text">нет текста</string>
     <string name="dialog_page3_message">больше не показывать это сообщение</string>
 
 

@@ -16,7 +16,13 @@ public class page1 extends Activity {
 		  requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
 		  
 		  setContentView(R.layout.page1);
-	 
+		  String text =getIntent().getStringExtra("text");
+		  if (getIntent().getBooleanExtra("first",true)==false){
+			TextView tv1 =(TextView)findViewById(R.id.textView1_page1);
+			TextView tv2 =(TextView)findViewById(R.id.textView2_page1);
+			tv1.setText(text);
+			tv2.setText(text);}
+
 	        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.window_title);
 	}
 	

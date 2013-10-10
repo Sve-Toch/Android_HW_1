@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+     android:orientation="vertical"
+     >
+    
+
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/u2_normal" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+            
+        />
+
+<LinearLayout
+    android:id="@+id/linearlayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/image"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    
+    >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Button1"
+        style="@style/ButtonTheme" 
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="6dp"
+        
+
+       />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Button2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        style="@style/ButtonTheme"         
+         />
+</LinearLayout>
+</RelativeLayout>
+
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/text" 
+       android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"/>
+
+   <Button
+       android:id="@+id/buttonDialog"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/Dialog"
+       style="@style/DialogButtonTheme" 
+       android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"/>
+
+   <EditText
+       android:id="@+id/EditText"
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:text="enter text..."
+       android:gravity="top"
+       android:layout_margin="7dp"
+       
+        />
+
+   <LinearLayout
+    android:id="@+id/linearlayout2_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:layout_alignParentBottom="true"
+    
+    >
+
+   
+       <ImageButton 
+           android:id="@+id/ImageButton1"
+         android:src="@drawable/u17_normal"
+         style="@style/MenuButtonTheme"  
+          android:layout_width="0dp"
+         android:layout_margin="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"   
+           />
+        <ImageButton 
+                       android:id="@+id/ImageButton2"
+            
+         android:src="@drawable/u28_normal"
+         style="@style/MenuButtonTheme"  
+          android:layout_width="0dp"
+         android:layout_margin="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"   
+           />
+         <ImageButton 
+                        android:id="@+id/ImageButton3"
+             
+         android:src="@drawable/u47_normal"
+         style="@style/MenuButtonTheme"  
+          android:layout_width="0dp"
+         android:layout_margin="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"   
+           />
+</LinearLayout>
+   </LinearLayout>
+   
+</RelativeLayout>

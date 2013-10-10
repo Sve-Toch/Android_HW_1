@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="MyTextThem">
+     <item name="android:textColor">#FFFFFF</item>
+     <item name="android:layout_width">0dp</item>
+     <item name="android:layout_height">fill_parent</item>   
+     <item name="android:gravity">center</item>
+     <item name="android:textStyle">bold</item>
+     
+    </style>
+   <style name="MainThem" parent="android:Theme.Light">
+   <item name="android:windowNoTitle">true</item>
+   
+    </style>     
+   <style name="Page_1_Theme" parent="android:Theme.Light">
+       <item name="android:gravity">center</item>
+   </style>
+   <style name="TextViewTheme">
+       <item name="android:layout_width">0dp</item>
+       <item name="android:layout_height">fill_parent</item>
+       <item name="android:layout_weight">1</item>
+       <item name="android:gravity">center</item>
+       <item name="android:layout_margin">10dp</item>
+   </style>  
+     
+   <style name="ButtonTheme" parent="@android:style/Widget.Button">
+   		<item name="android:background">@drawable/hbutton</item>
+   </style>
+   <style name="DialogButtonTheme" parent="@android:style/Widget.Button">
+       <item name="android:background">@drawable/dialogbutton</item>
+   </style>  
+      <style name="MenuButtonTheme" parent="@android:style/Widget.Button">
+   		<item name="android:background">@drawable/menu_button</item>
+   </style>
+   <style name="DialogTheme" parent="@android:style/Holo.Light.ButtonBar.AlertDialog">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

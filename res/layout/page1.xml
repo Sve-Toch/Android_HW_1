@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+           android:gravity="center" 
+    
+    android:layout_gravity="center_horizontal">
+    
+
+    <TextView
+       android:id="@+id/textView1_page1"    
+       android:text="@string/text"
+       style="@style/TextViewTheme"         
+       />
+   
+    <TextView
+       android:id="@+id/textView2_page1"
+       android:text="@string/text"
+       style="@style/TextViewTheme"    
+       />
+   
+  
+ 
+
+</LinearLayout>
+
+

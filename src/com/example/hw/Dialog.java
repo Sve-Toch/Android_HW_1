@@ -1,5 +1,6 @@
 package com.example.hw;
 
+import android.R.bool;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -24,10 +25,11 @@ public class Dialog {
 	            LayoutInflater inflater = activity.getLayoutInflater();
 
 	            builder.setView(inflater.inflate(R.layout.dialog_main, null));
-	           builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() { // Кнопка ОК
+	          
+	    /*       builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() { // Кнопка ОК
 	                @Override
-	                public void onClick(DialogInterface dialog, int which) {
-	                    dialog.dismiss(); // Отпускает диалоговое окно					
+	                public void onClick(DialogInterface dialog, int which) {	                    
+	                	dialog.dismiss(); // Отпускает диалоговое окно					
 	                }
 	            });
 	            builder.setNeutralButton(android.R.string.cancel, new DialogInterface.OnClickListener() { // Cancel
@@ -36,6 +38,7 @@ public class Dialog {
 	                    dialog.dismiss(); // Отпускает диалоговое окно
 	                }
 	            });
+	            */
 	            
 	            
 	            return builder.create();
@@ -44,8 +47,10 @@ public class Dialog {
 		            final String[] checkCatsName = { "Больше не показывать это окно" };
 	        	builder.setTitle(R.string.Dialog);
 	            builder.setCancelable(true);
-	           
-	            builder.setMultiChoiceItems(checkCatsName, mCheckedItems,
+	            LayoutInflater inflater2 = activity.getLayoutInflater();
+
+	            builder.setView(inflater2.inflate(R.layout.dialog_p3, null));
+	      /*      builder.setMultiChoiceItems(checkCatsName, mCheckedItems,
 	                    new DialogInterface.OnMultiChoiceClickListener() {
 	                        @Override
 	                        public void onClick(DialogInterface dialog,
@@ -65,6 +70,7 @@ public class Dialog {
 	                    dialog.dismiss(); // Отпускает диалоговое окно
 	                }
 	            });
+	            */
 	            return builder.create();
 	        
 	       

@@ -3,14 +3,22 @@ package com.example.hw;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class MainActivity extends Activity {
-
+	  EditText et_m;
+	     EditText et;
+	     Button b_ok;
+	     Button b_c;
+	     AlertDialog dialog ;
+	     boolean first=true;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -43,14 +51,40 @@ public class MainActivity extends Activity {
 				startActivity(i);
 			}
 		});
+	    et_m= (EditText) findViewById(R.id.EditText);
+	   
 		Button btn4 = (Button) findViewById(R.id.buttonDialog);
 		btn4.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 			
-				  AlertDialog dialog = Dialog.getDialog(MainActivity.this, Dialog.IDD_PAGE_1);
+			
+				   dialog = Dialog.getDialog(MainActivity.this, Dialog.IDD_PAGE_1);
 			        dialog.show();
+			      et= (EditText)dialog.findViewById(R.id.editText1_dialog_p1);
+			      b_ok= (Button)dialog.findViewById(R.id.button1_dialog_p1);
+			      b_c =(Button)dialog.findViewById(R.id.button2_dialog_p1);
+			      			        
+			      b_ok.setOnClickListener(new View.OnClickListener() {
+						
+						@Override
+						public void onClick(View v) {
+							String s;
+							if (first==false ){
+							 s =et_m.getText().toString(); 
+							} else {first=true; s="";}
+							et_m.setText(s+et.getText());
+							 dialog.dismiss();
+						}
+						});
+			      b_c.setOnClickListener(new View.OnClickListener() {
+						
+						@Override
+						public void onClick(View v) {
+							 dialog.dismiss();
+						}
+						});
 			}	
 		});
 		

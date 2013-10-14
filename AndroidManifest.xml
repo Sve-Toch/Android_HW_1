@@ -26,13 +26,13 @@
             </intent-filter>
         </activity>
          <activity  
-             android:name="com.example.hw.page1"
+             android:name="com.example.hw.Page1"
              android:theme="@style/CustomTheme"
                 />
-         <activity  android:name="com.example.hw.page2"
+         <activity  android:name="com.example.hw.Page2"
             android:theme="@style/MainThem"        
              />
-         <activity  android:name="com.example.hw.page3"
+         <activity  android:name="com.example.hw.Page3"
               android:theme="@style/MainThem"          
              />
            

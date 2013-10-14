@@ -17,15 +17,15 @@ public class Dialog2 extends DialogFragment implements OnClickListener {
 		void onFinishEditDialog2(Boolean value);
 	}
   final String LOG_TAG = "myLogs";
- private CheckBox cb;
+  private CheckBox cb;
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
-    getDialog().setTitle("Title!");
-    View v = inflater.inflate(R.layout.dialog_p3, null);
-    cb = (CheckBox)v.findViewById(R.id.checkBox1);
-    v.findViewById(R.id.button1_dialog_p1).setOnClickListener(this);
-    v.findViewById(R.id.button2_dialog_p1).setOnClickListener(this);
-    return v;
+	  getDialog().setTitle(R.string.Dialog);
+	  View v = inflater.inflate(R.layout.dialog_p3, null);
+	  cb = (CheckBox)v.findViewById(R.id.checkBox1);
+	  v.findViewById(R.id.button1_dialog_p1).setOnClickListener(this);
+	  v.findViewById(R.id.button2_dialog_p1).setOnClickListener(this);
+	  return v;
   }
 
   public void onClick(View v) {
@@ -34,8 +34,6 @@ public class Dialog2 extends DialogFragment implements OnClickListener {
 		Boolean value = cb.isChecked();
 		EditNameDialog2Listener callAct  =(EditNameDialog2Listener)getActivity();
 		callAct.onFinishEditDialog2(value);
-		//	editTextMain.setText(s+editText.getText());
-		
 	  }
     Log.d(LOG_TAG, "Dialog 1: " + ((Button) v).getText());
     this.dismiss();

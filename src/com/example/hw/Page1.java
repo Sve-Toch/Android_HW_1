@@ -2,12 +2,11 @@ package com.example.hw;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
 
-public class page1 extends Activity {
+public class Page1 extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

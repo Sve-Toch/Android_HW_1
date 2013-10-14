@@ -31,7 +31,7 @@ public class MainActivity extends Activity implements EditNameDialog1Listener {
 			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(MainActivity.this, page1.class);
+				Intent i = new Intent(MainActivity.this, Page1.class);
 				i.putExtra("first",first);
 				if( first==false)
 				{i.putExtra("text",editTextMain.getText().toString());}
@@ -44,7 +44,7 @@ public class MainActivity extends Activity implements EditNameDialog1Listener {
 			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(MainActivity.this, page2.class);
+				Intent i = new Intent(MainActivity.this, Page2.class);
 				startActivity(i);
 			}
 		});
@@ -54,7 +54,7 @@ public class MainActivity extends Activity implements EditNameDialog1Listener {
 			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(MainActivity.this, page3.class);
+				Intent i = new Intent(MainActivity.this, Page3.class);
 				startActivity(i);
 			}
 		});
@@ -69,8 +69,6 @@ public class MainActivity extends Activity implements EditNameDialog1Listener {
 			      dlg1.show(getFragmentManager(), "dlg1");
 			}	
 		});
-		
-		
 		
 	}
 

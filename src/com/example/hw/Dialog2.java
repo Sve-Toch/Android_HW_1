@@ -9,20 +9,20 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.CheckBox;
 
-public class Dialog1 extends DialogFragment implements OnClickListener {
+public class Dialog2 extends DialogFragment implements OnClickListener {
 
-	public interface EditNameDialog1Listener{
-		void onFinishEditDialog(String inputText);
+	public interface EditNameDialog2Listener{
+		void onFinishEditDialog2(Boolean value);
 	}
   final String LOG_TAG = "myLogs";
- private EditText et;
+ private CheckBox cb;
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
     getDialog().setTitle("Title!");
-    View v = inflater.inflate(R.layout.dialog_main, null);
-    et = (EditText)v.findViewById(R.id.editText1_dialog_p1);
+    View v = inflater.inflate(R.layout.dialog_p3, null);
+    cb = (CheckBox)v.findViewById(R.id.checkBox1);
     v.findViewById(R.id.button1_dialog_p1).setOnClickListener(this);
     v.findViewById(R.id.button2_dialog_p1).setOnClickListener(this);
     return v;
@@ -31,9 +31,9 @@ public class Dialog1 extends DialogFragment implements OnClickListener {
   public void onClick(View v) {
 	  if (v.getId()==R.id.button1_dialog_p1)
 	  {
-		String value = et.getText().toString();
-		EditNameDialog1Listener callAct  =(EditNameDialog1Listener)getActivity();
-		callAct.onFinishEditDialog(value);
+		Boolean value = cb.isChecked();
+		EditNameDialog2Listener callAct  =(EditNameDialog2Listener)getActivity();
+		callAct.onFinishEditDialog2(value);
 		//	editTextMain.setText(s+editText.getText());
 		
 	  }

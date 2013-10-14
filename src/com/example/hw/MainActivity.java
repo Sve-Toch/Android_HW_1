@@ -1,19 +1,20 @@
 package com.example.hw;
 
+
+import com.example.hw.Dialog1.EditNameDialog1Listener;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DialogFragment;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements EditNameDialog1Listener {
 	  EditText editTextMain;
 	     EditText editText;
 	     Button buttonOk;
@@ -66,46 +67,24 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				 DialogFragment dlg1 = new Dialog1();
 			      dlg1.show(getFragmentManager(), "dlg1");
-
-			
-			/*	  dialog = Dialog.getDialog(MainActivity.this, Dialog.IDD_PAGE_1);
-			      dialog.show();
-			      editText= (EditText)dialog.findViewById(R.id.editText1_dialog_p1);
-			      buttonOk= (Button)dialog.findViewById(R.id.button1_dialog_p1);
-			      buttonCancel =(Button)dialog.findViewById(R.id.button2_dialog_p1);
-			      			        
-			      buttonOk.setOnClickListener(new View.OnClickListener() {
-						
-						@Override
-						public void onClick(View v) {
-							String s;
-							if (first==false ){
-							 s =editTextMain.getText().toString(); 
-							} else {first=false; s="";}
-							editTextMain.setText(s+editText.getText());
-							 dialog.dismiss();
-						}
-						});
-			      buttonCancel.setOnClickListener(new View.OnClickListener() {
-						
-						@Override
-						public void onClick(View v) {
-							 dialog.dismiss();
-						}
-						});
-						*/
 			}	
 		});
 		
 		
 		
 	}
+
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	@Override
+	public void onFinishEditDialog(String inputText) {
+		if (first==true) first=false;
+		editTextMain.setText(editTextMain.getText()+inputText);
+
 	}
 
 }

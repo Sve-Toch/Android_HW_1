@@ -18,8 +18,8 @@ import android.widget.Toast;
 
 public class page3 extends Activity {
 	CheckBox ch;
-	Button b_ok;
-	Button b_c;
+	Button buttonOk;
+	Button buttonCancel;
 	Boolean mg=false;
 	  AlertDialog dialog;
 	@Override
@@ -39,10 +39,10 @@ public class page3 extends Activity {
 			        dialog.show();
 			        ch= (CheckBox)dialog.findViewById(R.id.checkBox1);
 			        ch.setChecked(mg);
-				      b_ok= (Button)dialog.findViewById(R.id.button1_dialog_p1);
-				      b_c =(Button)dialog.findViewById(R.id.button2_dialog_p1);
+				      buttonOk= (Button)dialog.findViewById(R.id.button1_dialog_p1);
+				      buttonCancel =(Button)dialog.findViewById(R.id.button2_dialog_p1);
 				     			        
-				      b_ok.setOnClickListener(new View.OnClickListener() {
+				      buttonOk.setOnClickListener(new View.OnClickListener() {
 							
 							@Override
 							public void onClick(View v) {
@@ -58,7 +58,7 @@ public class page3 extends Activity {
 								 dialog.dismiss();
 							}
 							});
-				      b_c.setOnClickListener(new View.OnClickListener() {
+				      buttonCancel.setOnClickListener(new View.OnClickListener() {
 							
 							@Override
 							public void onClick(View v) {

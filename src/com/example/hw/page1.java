@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 
 public class page1 extends Activity {
-	View header1;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -20,22 +20,18 @@ public class MainActivity extends Activity implements EditNameDialog1Listener {
 	     Button buttonOk;
 	     Button buttonCancel;
 	     AlertDialog dialog ;
-	     boolean first=true;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		ImageButton btn1 = (ImageButton) findViewById(R.id.ImageButton1);
-		 editTextMain= (EditText) findViewById(R.id.EditText);
+	    editTextMain= (EditText) findViewById(R.id.EditText);
 		btn1.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(MainActivity.this, Page1.class);
-				i.putExtra("first",first);
-				if( first==false)
-				{i.putExtra("text",editTextMain.getText().toString());}
-
+				i.putExtra("text",editTextMain.getText().toString());
 				startActivity(i);
 			}
 		});
@@ -72,7 +68,6 @@ public class MainActivity extends Activity implements EditNameDialog1Listener {
 		
 	}
 
-	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.main, menu);
@@ -80,7 +75,6 @@ public class MainActivity extends Activity implements EditNameDialog1Listener {
 	}
 	@Override
 	public void onFinishEditDialog(String inputText) {
-		if (first==true) first=false;
 		editTextMain.setText(editTextMain.getText()+inputText);
 
 	}

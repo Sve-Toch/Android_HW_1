@@ -16,7 +16,7 @@ public class Page1 extends Activity {
 		  
 		  setContentView(R.layout.page1);
 		  String text =getIntent().getStringExtra("text");
-		  if (getIntent().getBooleanExtra("first",true)==false){
+		  if (text.equals("")==false){
 			TextView tv1 =(TextView)findViewById(R.id.textView1_page1);
 			TextView tv2 =(TextView)findViewById(R.id.textView2_page1);
 			int l=text.length()/2;

@@ -14,7 +14,7 @@ public class Page3 extends Activity implements EditNameDialog2Listener {
 	CheckBox ch;
 	Button buttonOk;
 	Button buttonCancel;
-	Boolean mg=false;
+	Boolean mgs=false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,7 +26,7 @@ public class Page3 extends Activity implements EditNameDialog2Listener {
 			
 			@Override
 			public void onClick(View v) {
-				   if (mg==false){
+				   if (mgs==false){
 					   
 					   DialogFragment dlg2 = new Dialog2();
 					      dlg2.show(getFragmentManager(), "dlg1");
@@ -37,8 +37,22 @@ public class Page3 extends Activity implements EditNameDialog2Listener {
 	@Override
 	public void onFinishEditDialog2(Boolean value) {
 		// TODO Auto-generated method stub
-		mg=value;
-	}	
+		mgs=value;
+		}	
+	@Override
+	public void onSaveInstanceState(Bundle savednstanceState)
+	{
+		super.onSaveInstanceState(savednstanceState);
+		savednstanceState.putBoolean("mgs1", mgs);
+	}
+	@Override
+	public void onRestoreInstanceState(Bundle savednstanceState)
+	{
+		super.onRestoreInstanceState(savednstanceState);
+		 mgs= savednstanceState.getBoolean("mgs1");
+	}
+
+	
 }
 		
 		

@@ -16,10 +16,10 @@ import android.widget.ImageButton;
 
 public class MainActivity extends Activity implements EditNameDialog1Listener {
 	  EditText editTextMain;
-	     EditText editText;
-	     Button buttonOk;
-	     Button buttonCancel;
-	     AlertDialog dialog ;
+	  EditText editText;
+	  Button buttonOk;
+	  Button buttonCancel;
+	  AlertDialog dialog ;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
